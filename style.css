@@ -1,0 +1,261 @@
+#header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:20px,80px;
+    background-color:white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06) ;
+    z-index: 999;
+    position: sticky;
+    top:0;
+    left:0;
+}
+.logo{
+    width:150px;
+    color:#1a1a1a;
+}
+#nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+#nav li{
+    list-style: none;
+    padding:0px 20px;
+    position: relative;
+}
+#nav li a{
+    text-decoration:none;
+    font-size: 16px;
+    font-weight: 600;
+    color:#1a1a1a;
+    transition: 0.3;
+
+}
+#nav li a:hover,
+#nav li a.active{
+
+    color:#950606;
+}
+#nav li a.active::after, 
+#nav li a:hover::after{
+    content:"";
+    width:30%;
+    height:2px;
+    background-color:#950606 ;
+    position: absolute;
+    bottom:-4px;
+    left:20px;
+}
+#hero{
+    background-image: url("clark-street-mercantile-qnKhZJPKFD8-unsplash.jpg");
+    height:90vh;
+    width:100%;
+    background-size: cover;
+    background-position: top 25% right 0  ;
+    padding:0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+h4{
+    font-size: 30px;
+    margin:0px;
+    padding-bottom:15px;
+    color:#2B2B2B;
+    
+    
+}
+body{
+    margin:0px;
+}
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    margin:0px;
+    color:#950606
+
+}
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    margin:0px;
+    color:#950606;
+}
+p{
+    font-size: 16px;
+    margin:15px 0 20px 0;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+    
+#feature{
+    padding-top: 40px;
+}
+.f-marquee{
+    box-sizing: border-box;
+    overflow:hidden;
+    height:6vh;
+    z-index: 1111;
+    width:100%;
+    margin:0;
+    padding:0;
+
+}
+.f-announcemt_bar{
+    width:max-content;
+    display:flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    gap:8vw;
+    position: relative;
+    overflow:hidden;
+    text-transform: uppercase;
+    color:white;
+    background-color:#950606;
+    animation: f-marquee 40s linear infinite;
+    border:1px solid white;
+}
+@keyframes f-marquee{
+    0%{
+        left:0;
+
+    }
+    100%{
+        left:-100%;
+    }
+}
+
+.f-container{
+    display:flex;
+    align-items:flex-start ;
+    justify-content: space-between;
+    width:100%;
+    padding: 40px 5%;
+    margin: 0 ;
+    position:relative;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+
+}
+.f-container-logo{
+flex-direction: column;
+display: flex;
+width:30%;
+max-width: 200px;
+align-items:flex-start;
+}
+
+
+    
+
+.f-container-content{
+    width: 65%;
+    display:flex;
+    gap:40px;
+    justify-content: space-evenly;
+}
+.navlist{
+    text-transform: uppercase;
+    color:#950606;
+    width:50%;
+
+}
+.navlist2{
+    text-transform: uppercase;
+    color:#950606;
+    width:50%;
+}
+
+.navlist ul{
+    list-style: none;
+    padding:0;
+    margin:0;
+
+}
+.navlist2 ul{
+    list-style: none;
+    margin:0;
+    padding:0;
+
+}
+.l1{
+    font:9px;
+    color:#950606;
+    margin-bottom:10px;
+    font-weight: 100;
+
+
+}
+.navlist ul li a{
+    font-size: 10px;
+    color: #950606;
+    text-decoration: none;
+    display:inline-block;
+    margin-bottom: 6px;
+}
+.navlist2 ul li a{
+    font-size: 10px;
+    color: #950606;
+    text-decoration: none;
+    display:inline-block;
+    margin-bottom: 6px;
+}
+.copyrights p{
+    font-size: 10px;
+    color:#950606;
+    background-color: aquamarine;
+    display: inline-block;
+    bottom:0;
+    line-height: 1.6;
+    text-transform: uppercase;
+}
+.copyrights{
+margin-top: 20px;
+bottom:0;
+font-size: 10px;;
+display: inline-block;
+    
+}
+.footer-last{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    height:6vh;
+    padding:0.5%;
+    background-color: #950606;
+}
+.footer-last a{
+    font-size: 10px;
+    letter-spacing: 0;
+    color:white;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.footer-last ul{
+    height:100%;
+    display:flex;
+    gap:8vw;
+    align-items: center;
+}
+.footer-last ul li{
+    height:100%;
+    display:flex;
+    align-items: center;
+    font-size: 10px;
+}
+#footer{
+    position:relative;
+    width:100%;
+    overflow:hidden;
+}
